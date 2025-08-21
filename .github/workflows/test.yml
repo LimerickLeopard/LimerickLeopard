@@ -12,7 +12,7 @@ jobs:
         with:
           submodules: recursive
       - name: Use node latest
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: latest
       - name: Install
@@ -36,7 +36,7 @@ jobs:
         with:
           submodules: recursive
       - name: Use node ${{ matrix.node }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
           architecture: ${{ matrix.arch }}
